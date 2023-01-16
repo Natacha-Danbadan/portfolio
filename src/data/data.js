@@ -19,7 +19,7 @@ const PROJECTS = [
         link: "https://helium-pmms.netlify.app/index.html"
     },
     {
-        img: "/images/projects/countries.png", 
+        img: "/images/projects/countries.jpg", 
         title: "World Countries", 
         description: "World countries cards from an online database", 
         skills: [
@@ -54,15 +54,15 @@ const PROJECTS = [
         ],
         link: "https://natacha-danbadan.github.io/Javascript-task/"
     },
-    {
-        img: "/images/projects/calculator.png", 
-        title: "Calculator", 
-        description: "A Simple Calculator", 
-        skills: [
-            "/images/skills/html5.svg", "/images/skills/css3.svg", "/images/skills/javascript.svg"
-        ],
-        link: "https://natacha-danbadan.github.io/A-simple-calculator/"
-    },
+    // {
+    //     img: "/images/projects/calculator.png", 
+    //     title: "Calculator", 
+    //     description: "A Simple Calculator", 
+    //     skills: [
+    //         "/images/skills/html5.svg", "/images/skills/css3.svg", "/images/skills/javascript.svg"
+    //     ],
+    //     link: "https://natacha-danbadan.github.io/A-simple-calculator/"
+    // },
     {
         img: "/images/projects/e-commerce.png", 
         title: "E Commerce website", 

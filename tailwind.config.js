@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#023047",
-        primaryTwo: "#02273b",
+        primaryTwo: "#491637",
         secondary:"#f77f00",
         secondaryTwo:"#d62828"
       },
@@ -20,7 +20,11 @@ module.exports = {
       },
       boxShadow: {
         profile: '0 4px 20px rgba(255, 252, 252, 0.25)',
-      }
+        // natty: '0 0 5px 2px rgba(0,0,0,.35)',
+      },
+      backgroundImage: {
+        newbg: "linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );",
+       },
     },
   },
   plugins: [

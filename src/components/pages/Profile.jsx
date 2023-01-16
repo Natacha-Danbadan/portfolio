@@ -20,10 +20,19 @@ function Profile() {
           revolving web development.
       </p>
       <div className="flex text-secondary md:w-2/5 w-1/2 justify-between text-3xl">
-        <FaTwitter/>
-        <FaGithub/>
-        <FaLinkedinIn/>
-        <FaWhatsapp/>
+      <a href="https://twitter.com/NDanbadan">
+        <FaTwitter/>       
+      </a>
+      <a href="https://github.com/Natacha-Danbadan">
+        <FaGithub/>      
+      </a>      
+      <a href="https://www.linkedin.com/in/natacha-danbadan-194656199">
+        <FaLinkedinIn/>     
+      </a>      
+      <a href="https://">
+        <FaWhatsapp/>      
+      </a>
+   
       </div>
       </div>
       <div className="circle-lines lg:block  lg:items-center hidden lg:w-3/12">

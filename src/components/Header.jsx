@@ -24,7 +24,7 @@ function Header() {
   
   return (
           <div>
-            <nav className='w-full drop-shadow-lg md:px-14 px-8 bg-primaryTwo flex justify-between items-center'>
+            <nav className='w-full drop-shadow-xl  md:px-14 px-8 bg-primaryTwo flex justify-between items-center'>
               <div className="w-3/12 logo">
                 <img src={logo} alt="" className='lg:w-4/12 md:w-10/12 w-full'/>
               </div>
@@ -47,7 +47,7 @@ function Header() {
                 </ul>
               </div>
               <div className="w-3/12 hire-me-btn flex justify-end">
-                <button type='button' className='bg-secondary text-primary font-medium p-2 rounded-sm text-base hidden lg:block'>Hire Me</button>
+                <button type='button' className='bg-secondary text-primaryTwo font-medium p-2 rounded-sm text-base hidden lg:block'>Hire Me</button>
                 <button className="lg:hidden md:text-5xl text-4xl text-secondary z-50" onClick={modalHandler}>
                 {openModal ? <FaTimes/> : <FaBars/>}
                 </button>
@@ -55,8 +55,8 @@ function Header() {
             </nav>
 
             <div className="modal lg:hidden w-screen fixed z-40 bg-opacity-90 h-screen"> {openModal ? (
-                <div className="w-full h-full flex items-end  bg-primaryTwo  ">
-                  <nav className="bg-primary rounded-[50px] h-4/5 w-full">
+                <div className="w-full h-full flex items-end  bg-newbg">
+                  <nav className="bg-primaryTwo rounded-[50px] h-4/5 w-full">
                       <ul className="flex flex-col gap-8 text-xl font-bold w-full h-[70vh] justify-center items-center">
                         <li>
                             <Link to='/about' className='text-secondary hover:text-white' onClick={ linkFunc }>About Me</Link>
@@ -75,8 +75,7 @@ function Header() {
                 </div>
               ) : null} 
             </div>
-          </div> 
-              
+          </div>            
   )
 }
 

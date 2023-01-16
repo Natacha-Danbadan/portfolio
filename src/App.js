@@ -1,3 +1,7 @@
+
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Header from "./components/Header"
 import Profile from "./components/pages/Profile"
@@ -8,7 +12,7 @@ import Works from './components/pages/Works'
 function App() {
   return (
     <Router>
-        <div className="container w-full min-h-screen bg-primary">
+        <div className="container w-full min-h-screen bg-newbg">
         <Header/>
           <Routes>
             <Route exact path='/' element = {<Profile/>}></Route>
