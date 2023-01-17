@@ -7,6 +7,7 @@ import Header from "./components/Header"
 import Profile from "./components/pages/Profile"
 import Services from './components/pages/Services'
 import Works from './components/pages/Works'
+import Contact from "./components/pages/Contact";
 // import Footer from './components/Footer'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route  path='/about' element = {<Profile/>}></Route>
             <Route path='/services' element = {<Services/>}></Route>
             <Route path='/works' element = {<Works/>}></Route>
+            <Route path='/contact' element = {<Contact/>}></Route>
           </Routes>
         {/* <Footer/>   */}
         </div>

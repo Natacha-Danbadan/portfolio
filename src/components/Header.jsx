@@ -10,6 +10,7 @@ function Header() {
   const [openModal, setOpenModal] = useState(false)
   const modalHandler =()=> {
     setOpenModal(!openModal)
+    console.log(5)
 
    }  
 
@@ -23,7 +24,7 @@ function Header() {
   }, [openModal, allowScroll, blockScroll])
   
   return (
-          <div>
+          <div className="">
             <nav className='w-full drop-shadow-xl  md:px-14 px-8 bg-primaryTwo flex justify-between items-center'>
               <div className="w-3/12 logo">
                 <img src={logo} alt="" className='lg:w-4/12 md:w-10/12 w-full'/>
@@ -54,27 +55,31 @@ function Header() {
               </div>
             </nav>
 
-            <div className="modal lg:hidden w-screen fixed z-40 bg-opacity-90 h-screen"> {openModal ? (
-                <div className="w-full h-full flex items-end  bg-newbg">
-                  <nav className="bg-primaryTwo rounded-[50px] h-4/5 w-full">
-                      <ul className="flex flex-col gap-8 text-xl font-bold w-full h-[70vh] justify-center items-center">
-                        <li>
-                            <Link to='/about' className='text-secondary hover:text-white' onClick={ linkFunc }>About Me</Link>
-                        </li>
-                        <li>
-                            <Link to='/services'className='text-secondary hover:text-white' onClick={ linkFunc }>Services</Link>
-                        </li>
-                        <li>
-                            <Link to='/works' className='text-secondary hover:text-white' onClick={ linkFunc }>Works</Link>
-                        </li>
-                        <li>
-                            <Link to='/contact' className='text-secondary hover:text-white' onClick={ linkFunc }>Contact</Link>
-                        </li>
-                      </ul>
-                  </nav>
-                </div>
-              ) : null} 
-            </div>
+            {
+              openModal ? (
+                <div className="lg:hidden flex w-screen fixed z-10 h-screen">
+                  <div className="w-full h-full flex items-end bg-newbg">
+                    <nav className="bg-primaryTwo rounded-[50px] h-4/5 w-full">
+                        <ul className="flex flex-col gap-8 text-xl font-bold w-full h-[70vh] justify-center items-center">
+                          <li>
+                              <Link to='/about' className='text-secondary hover:text-white' onClick={ linkFunc }>About Me</Link>
+                          </li>
+                          <li>
+                              <Link to='/services'className='text-secondary hover:text-white' onClick={ linkFunc }>Services</Link>
+                          </li>
+                          <li>
+                              <Link to='/works' className='text-secondary hover:text-white' onClick={ linkFunc }>Works</Link>
+                          </li>
+                          <li>
+                              <Link to='/contact' className='text-secondary hover:text-white' onClick={ linkFunc }>Contact</Link>
+                          </li>
+                        </ul>
+                    </nav>
+                  </div>
+              </div>
+              ):null
+            }
+            
           </div>            
   )
 }
