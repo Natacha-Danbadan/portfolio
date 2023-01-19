@@ -29,7 +29,7 @@ function Profile() {
       <a href="https://www.linkedin.com/in/natacha-danbadan-194656199">
         <FaLinkedinIn/>     
       </a>      
-      <a href="https://">
+      <a href="https://wa.link/v6vj0f">
         <FaWhatsapp/>      
       </a>
    
