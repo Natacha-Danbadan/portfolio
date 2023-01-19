@@ -1,7 +1,13 @@
+// import {useState} from 'react'
 
 function ContactForm() {
+   
+    const formSubmit = (e) => {
+        e.preventDefault()
+    }
+
   return (
-    <form action="" method="post">
+    <form action="" method="post" onSubmit={formSubmit}>
         <div className="flex flex-col lg:flex-row lg:w-4/5 gap-4 mx-auto items-stretch">
             <div className="w-full lg:w-1/2  flex flex-col justify-start gap-4 lg:justify-between">
                 <label htmlFor="Full Name">
@@ -11,7 +17,7 @@ function ContactForm() {
                     <input type="text" placeholder="Your email address" className="w-full placeholder-gray-700 focus:outline-none rounded-[8px] px-4 py-[16px]"/>
                 </label>
                 <label htmlFor="Phone Number">
-                    <input type="text" placeholder="Your phone number (optional)" className="w-full placeholder-gray-700 focus:outline-none rounded-[8px] px-4 py-[16px]"/>
+                    <input  type="text" placeholder="Your phone number (optional)" className="w-full placeholder-gray-700 focus:outline-none rounded-[8px] px-4 py-[16px]"/>
                 </label>
             </div>
             <div className="w-full lg:w-1/2">
@@ -20,8 +26,7 @@ function ContactForm() {
                 </textarea>
             </div>
         </div>
-        <button className="border-solid border-2 rounded-[8px] p-3 border-secondary flex mx-auto my-10 px-10 text-white text-base hover:bg-secondary hover:text-primaryTwo hover:font-semibold">Submit Form</button>
-
+        <button type="submit" className="border-solid border-2 rounded-[8px] p-3 border-secondary flex mx-auto my-10 px-10 text-white text-base hover:bg-secondary hover:text-primaryTwo hover:font-semibold">Submit Form</button>
     </form>
   )
 }
