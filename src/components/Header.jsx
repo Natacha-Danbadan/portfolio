@@ -10,8 +10,6 @@ function Header() {
   const [openModal, setOpenModal] = useState(false)
   const modalHandler =()=> {
     setOpenModal(!openModal)
-    console.log(5)
-
    }  
 
   const linkFunc =() => {
@@ -25,7 +23,7 @@ function Header() {
   
   return (
           <div className="">
-            <nav className='w-full drop-shadow-xl  md:px-14 px-8 bg-primaryTwo flex justify-between items-center'>
+            <nav className='w-full drop-shadow-xl md:px-14 px-8 bg-primaryTwo flex justify-between items-center'>
               <div className="w-3/12 logo">
                 <img src={logo} alt="" className='lg:w-4/12 md:w-10/12 w-full'/>
               </div>
@@ -80,7 +78,7 @@ function Header() {
               ):null
             }
             
-          </div>            
+          </div>         
   )
 }
 

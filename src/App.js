@@ -8,7 +8,7 @@ import Profile from "./components/pages/Profile"
 import Services from './components/pages/Services'
 import Works from './components/pages/Works'
 import Contact from "./components/pages/Contact";
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
             <Route path='/works' element = {<Works/>}></Route>
             <Route path='/contact' element = {<Contact/>}></Route>
           </Routes>
-        {/* <Footer/>   */}
+        <Footer/>  
         </div>
     </Router>
     

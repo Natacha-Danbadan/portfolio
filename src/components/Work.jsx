@@ -8,7 +8,7 @@ function Work({props}) {
           <div className='w-full aspect-[1.845] rounded-[20px]'>
             <img className='object-cover' src={ img } alt={title}/>
           </div>
-          <a href={ link }><h3 className='text-secondary text-2xl lg:text-[32px] hover:underline hover:underline-offset-8 font-bold my-4'>{ title }</h3></a>
+          <a href={ link } target="_blank" rel="noreferrer" ><h3 className='text-secondary text-2xl lg:text-[32px] hover:underline hover:underline-offset-8 font-bold my-4'>{ title }</h3></a>
           <p className="text-sm lg:text-lg font-semibold">{ description }</p>
           <div className="flex justify-center gap-4 lg:gap-8 items-center mt-6">
                 { skills.map((item,idx) => (
