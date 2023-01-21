@@ -14,15 +14,15 @@ function App() {
   return (
     <Router>
         <div className="container w-full min-h-screen bg-newbg">
-        <Header/>
-          <Routes>
-            <Route exact path='/' element = {<Profile/>}></Route>
-            <Route  path='/about' element = {<Profile/>}></Route>
-            <Route path='/services' element = {<Services/>}></Route>
-            <Route path='/works' element = {<Works/>}></Route>
-            <Route path='/contact' element = {<Contact/>}></Route>
-          </Routes>
-        <Footer/>  
+          <Header/>
+            <Routes>
+              <Route exact path='/' element = {<Profile/>}></Route>
+              <Route  path='/about' element = {<Profile/>}></Route>
+              <Route path='/services' element = {<Services/>}></Route>
+              <Route path='/works' element = {<Works/>}></Route>
+              <Route path='/contact' element = {<Contact/>}></Route>
+            </Routes>
+          <Footer/>  
         </div>
     </Router>
     
