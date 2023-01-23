@@ -31,25 +31,30 @@ function ContactForm() {
     const formSubmit = (e) => {
         e.preventDefault()
 
-        if (userName !== '') {
-            
-        } else {
-            setUserError('Username is required')
-            
-        }
-
         if (userEmail !== '') {
             const emailReg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
             if (emailReg.test(userEmail)) {
                 setEmailError('')
             } else {
                 setEmailError('Email is invalid')
+            sentResult(false)
+
             }
             
-        } else {
-            setEmailError('Email is required')
-        }
+        }   else {
+                setEmailError('Email is required')
+                sentResult(false)
 
+            }
+        
+        if (userName !== '') {
+            
+        } else {
+            setUserError('Username is required')
+            sentResult(false)
+
+            
+        }
 
         emailjs.sendForm('service_x1c9zzs', 'template_dqfq03m', form.current, 'Fkcs91y6nN8hcLeLB')
       .then((result) => {
@@ -84,7 +89,7 @@ function ContactForm() {
                 </textarea>
             </div>
         </div>
-        <button type="submit"  className="border-solid border-2 rounded-[8px] py-2 border-secondary flex mx-auto mt-10 mb-3 px-10 text-white text-base hover:bg-secondary hover:text-primaryTwo hover:font-semibold">Submit Form</button>
+        <button type="submit" className="border-solid border-2 rounded-[8px] py-2 border-secondary flex mx-auto mt-10 mb-3 px-10 text-white text-base hover:bg-secondary hover:text-primaryTwo hover:font-semibold">Submit Form</button>
         <div> 
             {sentResult ? <Result/> : null}
         </div>
